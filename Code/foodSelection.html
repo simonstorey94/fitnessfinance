@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>Fitness Finance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="goal.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GET STARTED</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">Fitness</span> Finance</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h1>Please select the foods that you enjoy</h1>
+
+    <html>
+<body>
+
+    <form>
+        <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select>
+              <option>Select an option</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="checkboxes">
+            <label for="Chicken">
+              <input type="checkbox" id="Chicken" />Chicken</label>
+            <label for="Beef">
+              <input type="checkbox" id="Beef" />Beef</label>
+            <label for="Pork">
+              <input type="checkbox" id="Pork" />Pork</label>
+            <label for="turkey">
+                <input type="checkbox" id="turkey" />turkey</label>
+            <label for="fish">
+                <input type="checkbox" id="fish" />fish</label>
+            <label for="tomato">
+                <input type="checkbox" id="tomato" />tomato</label>
+            <label for="mushrooms">
+                 <input type="checkbox" id="mushrooms" />mushrooms</label>
+            <label for="peppers">
+                <input type="checkbox" id="peppers" />peppers</label>
+            <label for="spinach">
+                <input type="checkbox" id="spinach" />spinach</label>
+            <label for="lettuce">
+                <input type="checkbox" id="lettuce" />lettuce</label>
+            <label for="onions">
+                <input type="checkbox" id="onions" />onions</label>
+            <label for="broccoli">
+            <input type="checkbox" id="broccoli" />broccoli</label>
+            <label for="asparagus">
+                <input type="checkbox" id="asparagus" />asparagus</label>
+                <label for="sprouts">
+                <input type="checkbox" id="sprouts" />sprouts</label>
+                <label for="cabbage">
+                <input type="checkbox" id="cabbage" />cabbage</label>
+                <label for="brownrice">
+                    <input type="checkbox" id="brownrice" />brownrice</label>
+                <label for="pasta">
+                    <input type="checkbox" id="pasta" />pasta</label>
+                <label for="potatoes">
+                    <input type="checkbox" id="potatoes" />potatoes</label>
+                <label for="sweet potatoes">
+                    <input type="checkbox" id="sweet potatoes" />sweet potatoes</label>
+                <label for="eggs">
+                    <input type="checkbox" id="eggs" />eggs</label>
+                <label for="bread">
+                    <input type="checkbox" id="bread" />bread</label>
+                <label for="oats">
+                    <input type="checkbox" id="oats" />oats</label>
+                <label for="whiterice">
+                    <input type="checkbox" id="whiterice" />whiterice</label>
+                <label for="brownpasta">
+                    <input type="checkbox" id="brownpasta" />brownpasta</label>    
+          </div>
+        </div>
+      </form>
+  
+</body>
+</html>
+
+    
+      <br>  
+      <a href="Intolerances.html" class="next">Next &raquo;</a>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+  
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 100%;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+  }
+  
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+  .next {
+  background-color: #04AA6D;
+  color: white;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+  </style>
+
+</body>
+</html>
+
+<script>
+    var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+</script>
